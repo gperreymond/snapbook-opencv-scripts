@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  opencv-python:
+    build: .
+    volumes:
+      - "./images:/var/lib/py-images:ro"
+      - "./scripts:/var/lib/py-scripts:ro"
+      - "./volumes:/var/lib/py-volumes"
